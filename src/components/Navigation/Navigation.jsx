@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import logo from "../../assets/logo.png";
 
 const Navigation = () => {
@@ -8,7 +8,8 @@ const Navigation = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const menuVariants = {
+  // Variants for the mobile menu
+  const mobileMenuVariants = {
     hidden: {
       opacity: 0,
       y: -20,
@@ -18,6 +19,7 @@ const Navigation = () => {
       y: 0,
       transition: {
         duration: 0.5,
+        ease: "easeOut",
       },
     },
     exit: {
@@ -25,43 +27,72 @@ const Navigation = () => {
       y: -20,
       transition: {
         duration: 0.5,
+        ease: "easeIn",
       },
     },
   };
 
+  // Variants for animating menu items
+  const menuItemVariants = {
+    hidden: {
+      opacity: 0,
+      x: -20,
+    },
+    visible: (index) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: index * 0.1,
+        duration: 0.4,
+      },
+    }),
+  };
+
   return (
-    <header className="w-full bg-white shadow-md">
+    <header className="w-full bg-gray-100 shadow-md">
       <div className="flex items-center justify-between max-w-7xl h-24 mx-auto px-6 lg:px-12">
         <div className="shrink-0">
           <img src={logo} alt="Logo" className="w-36 h-auto lg:w-48 lg:h-auto rounded-full cursor-pointer" />
         </div>
 
-        <nav className="hidden lg:flex flex-grow justify-center">
-          <ul className="flex space-x-8 text-gray-700 font-bold text-xl lg:text-2xl">
-            <li className="hover:text-green-500 cursor-pointer">Home</li>
-            <li className="hover:text-green-500 cursor-pointer">Travels</li>
-            <li className="hover:text-green-500 cursor-pointer">About</li>
-          </ul>
+        {/* Navigation Menu for Large Screens */}
+        <nav className="hidden lg:flex justify-center w-full">
+          <motion.ul className="flex space-x-8 text-gray-700 font-bold text-xl lg:text-2xl mr-44" initial="hidden" animate="visible" >
+            {["Home", "Travels", "About"].map((item, index) => (
+              <motion.li
+                key={item}
+                variants={menuItemVariants}
+                custom={index}
+                whileHover={{ scale: 1.1, color: "#38a169" }}
+                className="cursor-pointer"
+              >
+                {item}
+              </motion.li>
+            ))}
+          </motion.ul>
         </nav>
 
-        <button className="lg:hidden text-gray-700 text-3xl cursor-pointer" onClick={toggleMenu} >
-          <RxHamburgerMenu />
-        </button>
+        {/* Hamburger Menu Icon */}
+        <div className="lg:hidden">
+          <button className="text-gray-700 text-3xl cursor-pointer" onClick={toggleMenu} >
+            <RxHamburgerMenu />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <motion.nav
-          className="lg:hidden bg-white border-t border-gray-200"
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          variants={menuVariants}
-        >
+        <motion.nav className="lg:hidden bg-white border-t border-gray-200" variants={mobileMenuVariants} initial="hidden" animate="visible" exit="exit">
           <ul className="flex flex-col items-center space-y-4 py-4 text-gray-700 font-bold text-lg">
-            <li className="hover:text-green-500 cursor-pointer">Home</li>
-            <li className="hover:text-green-500 cursor-pointer">Travels</li>
-            <li className="hover:text-green-500 cursor-pointer">About</li>
+            {["Home", "Travels", "About"].map((item) => (
+              <motion.li
+                key={item}
+                whileHover={{ scale: 1.1, color: "#38a169" }}
+                className="cursor-pointer"
+              >
+                {item}
+              </motion.li>
+            ))}
           </ul>
         </motion.nav>
       )}
