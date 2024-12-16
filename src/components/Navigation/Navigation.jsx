@@ -49,7 +49,7 @@ const Navigation = () => {
   };
 
   return (
-    <header className="w-full bg-gray-100 shadow-md">
+    <header className="sticky top-0 z-50 bg-gray-100 shadow-md">
       <div className="flex items-center justify-between max-w-7xl h-24 mx-auto px-6 lg:px-12">
         <div className="flex">
           <img src={logo} alt="Logo" className="w-36 h-auto lg:w-48 lg:h-auto rounded-full cursor-pointer" />
