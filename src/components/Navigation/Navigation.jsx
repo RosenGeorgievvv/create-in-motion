@@ -51,13 +51,13 @@ const Navigation = () => {
   return (
     <header className="w-full bg-gray-100 shadow-md">
       <div className="flex items-center justify-between max-w-7xl h-24 mx-auto px-6 lg:px-12">
-        <div className="shrink-0">
+        <div className="flex">
           <img src={logo} alt="Logo" className="w-36 h-auto lg:w-48 lg:h-auto rounded-full cursor-pointer" />
         </div>
 
         {/* Navigation Menu for Large Screens */}
         <nav className="hidden lg:flex justify-center w-full">
-          <motion.ul className="flex space-x-8 text-gray-700 font-bold text-xl lg:text-2xl mr-44" initial="hidden" animate="visible" >
+          <motion.ul className="flex space-x-8 text-gray-700 font-bold text-xl lg:text-2xl mr-40" initial="hidden" animate="visible" >
             {["Home", "Travels", "About"].map((item, index) => (
               <motion.li
                 key={item}
