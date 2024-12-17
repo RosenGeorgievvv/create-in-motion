@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <header className="w-full bg-gray-200 shadow-md">
-      <div className="flex items-center justify-between max-w-7xl h-24 mx-auto px-6 lg:px-12">
+      <div className="flex justify-center items-center gap-0 p-4">
         {/* Logo */}
         <div className="shrink-0 flex">
             <Link to='/'>
