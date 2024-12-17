@@ -35,11 +35,9 @@ const Navigation = () => {
       <div className="flex items-center justify-between max-w-7xl h-24 mx-auto px-6 lg:px-12">
         {/* Logo */}
         <div className="shrink-0 flex">
-          <img
-            src={logo}
-            alt="Logo"
-            className="w-36 h-auto lg:w-48 lg:h-auto rounded-full cursor-pointer"
-          />
+            <Link to='/'>
+            <img src={logo} alt="Logo" className="w-36 h-auto lg:w-48 lg:h-auto rounded-full cursor-pointer" />
+            </Link>
         </div>
 
         {/* Centered Navigation Menu */}
