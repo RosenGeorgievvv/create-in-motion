@@ -32,7 +32,7 @@ const Navigation = () => {
 
   return (
     <header className="w-full bg-gray-200 shadow-md">
-      <div className="flex justify-between p-4 lg:justify-center mr-40 relative">
+      <div className="flex justify-between p-4 lg:justify-center relative">
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/">
@@ -56,7 +56,7 @@ const Navigation = () => {
 
         {/* Desktop Navigation Menu */}
         <nav className="hidden lg:flex justify-center items-center w-full">
-          <ul className="flex space-x-8 text-gray-700 font-bold text-xl lg:text-2xl">
+          <ul className="flex mr-40 space-x-8 text-gray-700 font-bold text-xl lg:text-2xl">
             <li className="hover:text-green-700 cursor-pointer">
               <Link to="/">Home</Link>
             </li>
