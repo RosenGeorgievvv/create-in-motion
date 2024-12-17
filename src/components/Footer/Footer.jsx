@@ -19,6 +19,16 @@ const Footer = () => {
         </motion.a>
 
         <motion.a
+          href="mailto:triibria11@gmail.com"
+          className="text-gray-700 hover:text-gray-900"
+          style={{ cursor: 'pointer' }}
+          whileHover={{ scale: 1.2 }} 
+          whileTap={{ scale: 0.9 }} 
+        >
+          <FaEnvelope size={32} />
+        </motion.a>
+
+        <motion.a
           href="https://www.instagram.com/create_in_motion?igsh=NGRnc3A2ZzVteHR4"
           target="_blank"
           rel="noopener noreferrer"
@@ -28,17 +38,6 @@ const Footer = () => {
           whileTap={{ scale: 0.9 }} 
         >
           <FaInstagram size={32} />
-        </motion.a>
-
-
-        <motion.a
-          href="mailto:triibria11@gmail.com"
-          className="text-gray-700 hover:text-gray-900"
-          style={{ cursor: 'pointer' }}
-          whileHover={{ scale: 1.2 }} 
-          whileTap={{ scale: 0.9 }} 
-        >
-          <FaEnvelope size={32} />
         </motion.a>
       </div>
     </section>
