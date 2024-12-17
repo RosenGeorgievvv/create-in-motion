@@ -33,7 +33,7 @@ const About = () => {
       {/* Content Section */}
       <motion.div className="relative max-w-4xl px-8 text-center text-white space-y-6" variants={containerVariants} initial="hidden" animate="visible" >
         <motion.h1 className="text-4xl sm:text-6xl font-bold" variants={itemVariants} >
-          About <span className="text-green-500">Create In Motion</span>
+        <span className="text-green-400">Create In Motion</span>
         </motion.h1>
         <motion.p className="text-lg sm:text-xl leading-relaxed" variants={itemVariants} >
           Welcome to <strong>Create In Motion</strong>, a global platform
