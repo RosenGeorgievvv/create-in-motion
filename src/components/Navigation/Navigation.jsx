@@ -32,17 +32,31 @@ const Navigation = () => {
 
   return (
     <header className="w-full bg-gray-200 shadow-md">
-      <div className="flex justify-center items-center gap-0 p-4">
+      <div className="flex justify-between p-4 lg:justify-center mr-40 relative">
         {/* Logo */}
-        <div className="shrink-0 flex">
-            <Link to='/'>
-            <img src={logo} alt="Logo" className="w-36 h-auto lg:w-48 lg:h-auto rounded-full cursor-pointer" />
-            </Link>
+        <div className="flex items-center">
+          <Link to="/">
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-36 h-auto lg:w-48 lg:h-auto rounded-full cursor-pointer"
+            />
+          </Link>
         </div>
 
-        {/* Centered Navigation Menu */}
-        <nav className="flex justify-center items-center w-full">
-          <ul className="flex space-x-8 text-gray-700 font-bold text-xl lg:text-2xl mr-40">
+        {/* Hamburger Menu Icon */}
+        <div className="lg:hidden">
+          <button
+            className="text-gray-700 text-3xl cursor-pointer"
+            onClick={toggleMenu}
+          >
+            <RxHamburgerMenu />
+          </button>
+        </div>
+
+        {/* Desktop Navigation Menu */}
+        <nav className="hidden lg:flex justify-center items-center w-full">
+          <ul className="flex space-x-8 text-gray-700 font-bold text-xl lg:text-2xl">
             <li className="hover:text-green-700 cursor-pointer">
               <Link to="/">Home</Link>
             </li>
@@ -54,16 +68,6 @@ const Navigation = () => {
             </li>
           </ul>
         </nav>
-
-        {/* Hamburger Menu Icon */}
-        <div className="lg:hidden">
-          <button
-            className="text-gray-700 text-3xl cursor-pointer"
-            onClick={toggleMenu}
-          >
-            <RxHamburgerMenu />
-          </button>
-        </div>
       </div>
 
       {/* Mobile Navigation Menu */}
@@ -75,12 +79,12 @@ const Navigation = () => {
           exit="exit"
           variants={menuVariants}
         >
-          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-700 font-bold text-lg">
+          <ul className="flex flex-col items-center justify-center space-y-4 py-4 text-gray-700 font-bold text-lg">
             <li className="hover:text-green-700 cursor-pointer">
               <Link to="/">Home</Link>
             </li>
             <li className="hover:text-green-700 cursor-pointer">
-              <Link to="/">Travels</Link>
+              <Link to="/travels">Travels</Link>
             </li>
             <li className="hover:text-green-700 cursor-pointer">
               <Link to="/about">About</Link>
