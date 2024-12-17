@@ -46,10 +46,7 @@ const Navigation = () => {
 
         {/* Hamburger Menu Icon */}
         <div className="lg:hidden">
-          <button
-            className="text-gray-700 text-3xl cursor-pointer"
-            onClick={toggleMenu}
-          >
+          <button className="text-gray-700 text-3xl cursor-pointer" onClick={toggleMenu}>
             <RxHamburgerMenu />
           </button>
         </div>
