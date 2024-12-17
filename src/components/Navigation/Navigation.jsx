@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
@@ -69,6 +69,7 @@ const Navigation = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
+      <AnimatePresence>
       {isMenuOpen && (
         <motion.nav
           className="lg:hidden bg-white border-t border-gray-200"
@@ -90,6 +91,7 @@ const Navigation = () => {
           </ul>
         </motion.nav>
       )}
+      </AnimatePresence>
     </header>
   );
 };
