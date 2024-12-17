@@ -8,6 +8,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   const menuVariants = {
     hidden: {
@@ -78,13 +79,13 @@ const Navigation = () => {
         >
           <ul className="flex flex-col items-center justify-center space-y-4 py-4 text-gray-700 font-bold text-lg">
             <li className="hover:text-green-700 cursor-pointer">
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={closeMenu}>Home</Link>
             </li>
             <li className="hover:text-green-700 cursor-pointer">
-              <Link to="/travels">Travels</Link>
+              <Link to="/travels" onClick={closeMenu}>Travels</Link>
             </li>
             <li className="hover:text-green-700 cursor-pointer">
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={closeMenu}>About</Link>
             </li>
           </ul>
         </motion.nav>
