@@ -8,7 +8,7 @@ const HomePage = () => {
   const letters = fullText.split('');
 
   return (
-    <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <section className="relative h-screen bg-cover bg-center " style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative flex flex-col items-center justify-center h-full text-center space-y-4">
         <h1 className="text-white text-4xl sm:text-6xl lg:text-8xl font-bold flex">

@@ -31,7 +31,7 @@ const Navigation = () => {
   };
 
   return (
-    <header className="w-full bg-white shadow-md">
+    <header className="w-full bg-gray-200 shadow-md">
       <div className="flex items-center justify-between max-w-7xl h-24 mx-auto px-6 lg:px-12">
         {/* Logo */}
         <div className="shrink-0 flex">
@@ -47,7 +47,7 @@ const Navigation = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="hover:text-green-700 cursor-pointer">
-              <Link to="/">Travels</Link>
+              <Link to="/travels">Travels</Link>
             </li>
             <li className="hover:text-green-700 cursor-pointer">
               <Link to="/about">About</Link>
