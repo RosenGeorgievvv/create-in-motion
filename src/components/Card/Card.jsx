@@ -23,7 +23,7 @@ const Card = ({ item }) => {
       <p className="mt-4 text-gray-600">
         {item.description.substring(0, 50)}...
       </p>
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 rounded-md transition-opacity duration-300">
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 rounded-md transition-opacity duration-300">
         <button className="text-white text-lg font-semibold">Read More</button>
       </div>
     </motion.div>
