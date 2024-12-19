@@ -1,70 +1,21 @@
-import React, { useState } from "react";
-import data from '../data.js'
-
+import React from "react";
+import Card from "../Card/Card";
+import data from "../data.js"; 
 
 const Travels = () => {
-
-  const [filter, setFilter] = useState('All');
-
-  const handleFilterChange = (option) =>{
-    setFilter(option);
-  }
-
-  const filteredData = filter === "All" ? data : data.filter((item) => item.name.includes(filter));
-
   return (
-    <div className="p-4">
-      {/* Filter Options */}
-      <div className="flex flex-wrap gap-4 mb-6">
-        {[
-          "All",
-          "Rwanda & Burundi",
-          "Yemen",
-          "Afghanistan",
-          "Pakistan",
-          "Venezuela",
-          "Uganda",
-          "South Maldives",
-          "Bhutan",
-          "Nepal",
-        ].map((option) => (
-          <button
-            key={option}
-            className={`px-4 py-2 rounded ${
-              filter === option
-                ? "bg-blue-500 text-white"
-                : "bg-gray-200 hover:bg-gray-300"
-            }`}
-            onClick={() => handleFilterChange(option)}
-          >
-            {option}
-          </button>
-        ))}
-      </div>
+    <div className="p-8 relative">
+      <div className="absolute left-1/2 transform -translate-x-1/2 h-5/6 w-1 bg-green-700"></div>
 
-      {/* Grid for displaying items */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredData.map((item) => (
+      <div className="space-y-12">
+        {data.map((item, index) => (
           <div
             key={item.id}
-            className="relative group border border-gray-200 rounded-lg overflow-hidden shadow-md"
+            className={`flex items-center ${
+              index % 2 === 0 ? "justify-start" : "justify-end"
+            }`}
           >
-            <img
-              src={item.img[0]} // Use the first image for the grid
-              alt={item.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <button className="text-white text-lg font-semibold">
-                Read More
-              </button>
-            </div>
-            <div className="p-4">
-              <h2 className="text-xl font-bold">{item.name}</h2>
-              <p className="text-sm text-gray-600">
-                {item.description.substring(0, 100)}...
-              </p>
-            </div>
+            <Card item={item} />
           </div>
         ))}
       </div>
