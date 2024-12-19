@@ -4,6 +4,8 @@ import rwanda3 from "../assets/rwanda/rwanda3.jpg";
 import rwanda4 from "../assets/rwanda/rwanda4.jpg";
 import rwanda5 from "../assets/rwanda/rwanda5.jpg";
 
+import 
+
 const data = [
   {
     id: 1,
