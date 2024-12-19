@@ -1,29 +1,30 @@
 import React from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 
-const Card = ({ item }) => {
+const Card = ({ item, onClick }) => {
   return (
     <motion.div
-      className="w-1/3 p-4 border border-gray-200 rounded-lg shadow-lg bg-gray-300 relative"
+      className="w-1/3 p-4 border border-gray-200 rounded-lg shadow-lg bg-gray-300 relative cursor-pointer"
       whileHover={{
-        scale: 1.1, 
+        scale: 1.1,
         boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
       }}
       transition={{
-        duration: 0.3, 
+        duration: 0.3,
         ease: "easeInOut",
       }}
+      onClick={onClick} 
     >
       <h2 className="text-2xl font-bold mb-4 text-center">{item.name}</h2>
       <img
-        src={item.img[1]} 
+        src={item.img[1]}
         alt={item.name}
         className="w-full h-48 object-cover rounded-md"
       />
       <p className="mt-4 text-gray-600">
         {item.description.substring(0, 50)}...
       </p>
-      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 rounded-md transition-opacity duration-300">
+      <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center opacity-0 hover:opacity-100 rounded-md transition-opacity duration-300">
         <button className="text-white text-lg font-semibold">Read More</button>
       </div>
     </motion.div>
