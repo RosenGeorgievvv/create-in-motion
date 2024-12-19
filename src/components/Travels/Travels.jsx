@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion"; 
 import Card from "../Card/Card";
+import Travel from "../Travel/Travel.jsx";
 import data from "../data.js";
 
 const Travels = () => {
+  const [selectedTravel, setSelectedTravel] = useState(null);
+
+  const handleCardClick = (item) => {
+    setSelectedTravel(item);
+  };
+
+  const handleBack = () =>{
+    setSelectedTravel(null);
+  }
+
+  
   return (
     <div className="p-12 relative bg-gray-100">
       <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-600"></div>
