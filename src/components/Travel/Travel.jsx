@@ -7,7 +7,7 @@ const Travel = ({ item, onBack }) => {
     <div className="p-12 bg-gray-100">
       <button
         onClick={onBack}
-        className="mb-6 px-4 py-2 bg-green-600 text-white rounded-full shadow-md hover:bg-green-700 transition flex items-center justify-center"
+        className="px-3 py-3 bg-green-600 text-white rounded-full shadow-md hover:bg-green-700 transition flex items-center justify-center"
       >
         <IoArrowBack className="text-xl" />
       </button>
