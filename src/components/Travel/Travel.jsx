@@ -12,7 +12,17 @@ const Travel = ({ item, onBack }) => {
         <IoArrowBack className="text-xl" />
       </button>
 
-      <h2 className="text-4xl font-bold mb-8 text-center">{item.name}</h2>
+      <h1 className="text-4xl font-bold mb-16 text-center">{item.name}</h1>
+
+      <motion.h2
+        className="text-lg text-center text-gray-700 mb-12 px-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        {item.description}
+      </motion.h2>
+
       <motion.div
         className="grid grid-cols-3 gap-12"
         initial="hidden"

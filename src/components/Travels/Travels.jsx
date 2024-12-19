@@ -11,10 +11,9 @@ const Travels = () => {
     setSelectedTravel(item);
   };
 
-  const handleBack = () =>{
+  const handleBack = () => {
     setSelectedTravel(null);
-  }
-
+  };
 
   return (
     <div className="p-12 relative bg-gray-100">
@@ -22,17 +21,30 @@ const Travels = () => {
         <Travel item={selectedTravel} onBack={handleBack} />
       ) : (
         <>
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-600"></div>
+          <motion.div
+            className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-600"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+          />
           <div className="space-y-12">
             {data.map((item, index) => (
-              <div
+              <motion.div
                 key={item.id}
                 className={`flex items-center ${
                   index % 2 === 0 ? "justify-start pl-96" : "justify-end pr-96"
                 }`}
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ 
+                  delay: index * 0.2, 
+                  type: "spring", 
+                  stiffness: 50,
+                  damping: 15
+                }}
               >
                 <Card item={item} onClick={() => handleCardClick(item)} />
-              </div>
+              </motion.div>
             ))}
           </div>
         </>
