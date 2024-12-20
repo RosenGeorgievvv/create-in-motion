@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import Card from "../Card/Card";
 import Travel from "../Travel/Travel.jsx";
 import data from "../data.js";
@@ -16,7 +16,7 @@ const Travels = () => {
   };
 
   return (
-    <div className="p-12 relative bg-gray-100">
+    <div className="p-6 md:p-12 relative bg-gray-100">
       {selectedTravel ? (
         <Travel item={selectedTravel} onBack={handleBack} />
       ) : (
@@ -32,15 +32,17 @@ const Travels = () => {
               <motion.div
                 key={item.id}
                 className={`flex items-center ${
-                  index % 2 === 0 ? "justify-start pl-96" : "justify-end pr-96"
-                }`}
+                  index % 2 === 0
+                    ? "justify-start md:pl-48 lg:pl-96"
+                    : "justify-end md:pr-48 lg:pr-96"
+                } md:flex-row flex-col`}
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ 
-                  delay: index * 0.2, 
-                  type: "spring", 
+                transition={{
+                  delay: index * 0.2,
+                  type: "spring",
                   stiffness: 50,
-                  damping: 15
+                  damping: 15,
                 }}
               >
                 <Card item={item} onClick={() => handleCardClick(item)} />
