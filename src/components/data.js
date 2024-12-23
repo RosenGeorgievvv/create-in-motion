@@ -38,6 +38,19 @@ import pakistan6 from '../assets/pakistan/pakistan6.jpg';
 import pakistan7 from '../assets/pakistan/pakistan7.jpg';
 import pakistan8 from '../assets/pakistan/pakistan8.jpg';
 
+import afg1 from '../assets/afghanistan/afg1.jpg';
+import afg2 from '../assets/afghanistan/afg2.jpg';
+import afg3 from '../assets/afghanistan/afg3.jpg';
+import afg4 from '../assets/afghanistan/afg4.jpg';
+import afg5 from '../assets/afghanistan/afg5.jpg';
+import afg6 from '../assets/afghanistan/afg6.jpg';
+import afg7 from '../assets/afghanistan/afg7.jpg';
+import afg8 from '../assets/afghanistan/afg8.jpg';
+import afg9 from '../assets/afghanistan/afg9.jpg';
+import afg10 from '../assets/afghanistan/afg10.jpg';
+import afg11 from '../assets/afghanistan/afg11.jpg';
+import afg12 from '../assets/afghanistan/afg12.jpg';
+import afg13 from '../assets/afghanistan/afg13.jpg';
 
 import orca1 from '../assets/orca/orca1.jpg';
 import orca2 from '../assets/orca/orca2.jpg';
@@ -90,9 +103,9 @@ const data = [
   {
     id: 6,
     name: "Afghanistan",
-    img: [uganda1, uganda2, uganda3, uganda4, uganda5, uganda6],
+    img: [afg1, afg2, afg3, afg4, afg5, afg6, afg7, afg8, afg9, afg10, afg11, afg12, afg13],
     description:
-      "The beginning of summer. A time for prosecco on the beach and conversations about the little things in life.Just then, bearded and scruffy hooligans with Kalashnikovs were trying to seize Afghanistan. I had the chance to slip between the cracks and see a different Afghanistan—not the one shown on the news today. To meet wonderful people who were staring at their shattered future as my plane took off from Kabul.The unthinkable happened. Or perhaps the inevitable. Time reveals all secrets. A pity for everything and everyone there—a pity for the broken hopes.",
+      "The beginning of summer. A time for prosecco on the beach and conversations about the little things in life.Just then, scruffy, bearded hooligans with Kalashnikovs were attempting to take over Afghanistan.I had the chance to slip through the cracks and see a different Afghanistan—not the one shown on the news today. I met wonderful people, gazing at their ruined future as my plane took off from Kabul.The unthinkable happened. Or perhaps the inevitable. Time reveals all secrets. A tragedy for everything and everyone there, a tragedy for the hopes that were crushed.",
   },
   {
     id: 7,
@@ -103,7 +116,7 @@ const data = [
   },
   {
     id: 8,
-    name: "Uganda",
+    name: "Hakuna Matata",
     img: [uganda1, uganda2, uganda3, uganda4, uganda5, uganda6],
     description:
       "Rwanda and Burundi are the second and third of five countries featured in a journey called Around Lake Victoria.These two small nations, standing off the beaten tourist path, offer an authentic African experience, blessed with dramatic landscapes, rich biodiversity, and lakeside communities, each with its unique culture and a tragic history stained by brutal ethnic conflicts. Rwanda is healing the wounds of the 1994 genocide and transforming into a model of national unity and economic prosperity. From the Genocide Memorial in the pristine capital Kigali, along its impeccable roads, to the fishing villages around Lake Kivu and Nyungwe Forest National Park—home to Africa's oldest tropical forest, situated at the watershed between the Congo River basin to the west and the Nile River basin to the east.Burundi, meanwhile, is plagued by conflict, with poverty as the norm for all but a few. From Lake Tanganyika and the capital Bujumbura—surprisingly boasting refined restaurants and chic nightclubs—to Rusizi National Park and the site where journalist Henry Morton Stanley met explorer David Livingstone and uttered the iconic phrase,Dr. Livingstone, I presume?—Burundi offers a compelling mix of history and culture. Add to that the village of Gishora, where the captivating performances of the former royal drummers continue to enchant visitors.",
