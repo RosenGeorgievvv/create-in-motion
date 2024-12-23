@@ -38,6 +38,19 @@ import pakistan6 from '../assets/pakistan/pakistan6.jpg';
 import pakistan7 from '../assets/pakistan/pakistan7.jpg';
 import pakistan8 from '../assets/pakistan/pakistan8.jpg';
 
+
+import orca1 from '../assets/orca/orca1.jpg';
+import orca2 from '../assets/orca/orca2.jpg';
+import orca3 from '../assets/orca/orca3.jpg';
+import orca4 from '../assets/orca/orca4.jpg';
+import orca5 from '../assets/orca/orca5.jpg';
+import orca6 from '../assets/orca/orca6.jpg';
+import orca7 from '../assets/orca/orca7.jpg';
+import orca8 from '../assets/orca/orca8.jpg';
+import orca9 from '../assets/orca/orca9.jpg';
+import orca10 from '../assets/orca/orca10.jpg';
+
+
 const data = [
   {
     id: 1,
@@ -83,10 +96,10 @@ const data = [
   },
   {
     id: 7,
-    name: "Uganda",
-    img: [uganda1, uganda2, uganda3, uganda4, uganda5, uganda6],
+    name: "Orca-Expedition",
+    img: [orca1, orca2, orca3, orca4, orca5, orca6, orca7, orca8, orca9, orca10],
     description:
-      "Rwanda and Burundi are the second and third of five countries featured in a journey called Around Lake Victoria.These two small nations, standing off the beaten tourist path, offer an authentic African experience, blessed with dramatic landscapes, rich biodiversity, and lakeside communities, each with its unique culture and a tragic history stained by brutal ethnic conflicts. Rwanda is healing the wounds of the 1994 genocide and transforming into a model of national unity and economic prosperity. From the Genocide Memorial in the pristine capital Kigali, along its impeccable roads, to the fishing villages around Lake Kivu and Nyungwe Forest National Park—home to Africa's oldest tropical forest, situated at the watershed between the Congo River basin to the west and the Nile River basin to the east.Burundi, meanwhile, is plagued by conflict, with poverty as the norm for all but a few. From Lake Tanganyika and the capital Bujumbura—surprisingly boasting refined restaurants and chic nightclubs—to Rusizi National Park and the site where journalist Henry Morton Stanley met explorer David Livingstone and uttered the iconic phrase,Dr. Livingstone, I presume?—Burundi offers a compelling mix of history and culture. Add to that the village of Gishora, where the captivating performances of the former royal drummers continue to enchant visitors.",
+      "The idea is not just to visit places but to create stories. The last journey turned into an unforgettable one. We traveled through the Lofoten Islands, enchanting with their rugged beauty. We reached Tromsø, the capital of the north, and continued far beyond the Arctic Circle.We sailed through the fjords aboard the yacht SS Stella Oceana and dived with orcas and humpback whales. They dived with us too. Fate was kind—we got exactly what we deeply wished for!Before heading home, we introduced ourselves to Oslo, glowing in Christmas lights.The year continues, and there’s still time for more...Other stories await to be written in the New Year, 2022.",
   },
   {
     id: 8,
