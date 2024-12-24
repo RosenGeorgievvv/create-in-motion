@@ -8,13 +8,11 @@ import HomePage from "./components/Home/HomePage";
 import About from "./components/About/About";
 import Travels from "./components/Travels/Travels";
 import Footer from "./components/Footer/Footer";
-import ScrollTop from "./components/ScrollTop";
 
 function App() {
 
   return (
     <Router>
-      <ScrollTop />
      <Navigation />
      <Routes>
      <Route path="/" element={<HomePage />} />
