@@ -10,7 +10,7 @@ import Travels from "./components/Travels/Travels";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-         
+          
   return (
     <Router>
      <Navigation />
