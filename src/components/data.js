@@ -89,6 +89,16 @@ import lapland10 from '../assets/lapland/lapland10.jpg';
 import lapland11 from '../assets/lapland/lapland11.jpg';
 import lapland12 from '../assets/lapland/lapland12.jpg';
 
+import maldives1 from '../assets/southmaldives/maldives1.jpg';
+import maldives2 from '../assets/southmaldives/maldives2.jpg';
+import maldives3 from '../assets/southmaldives/maldives3.jpg';
+import maldives4 from '../assets/southmaldives/maldives4.jpg';
+import maldives5 from '../assets/southmaldives/maldives5.jpg';
+import maldives6 from '../assets/southmaldives/maldives6.jpg';
+import maldives7 from '../assets/southmaldives/maldives7.jpg';
+import maldives8 from '../assets/southmaldives/maldives8.jpg';
+import maldives9 from '../assets/southmaldives/maldives9.jpg';
+import maldives10 from '../assets/southmaldives/maldives10.jpg';
 
 
 
@@ -158,10 +168,10 @@ const data = [
   },
   {
     id: 10,
-    name: "Uganda",
-    img: [uganda1, uganda2, uganda3, uganda4, uganda5, uganda6],
+    name: "South Maldives",
+    img: [maldives1, maldives2, maldives3, maldives4, maldives5, maldives6, maldives7, maldives8, maldives9, maldives10],
     description:
-      "Rwanda and Burundi are the second and third of five countries featured in a journey called Around Lake Victoria.These two small nations, standing off the beaten tourist path, offer an authentic African experience, blessed with dramatic landscapes, rich biodiversity, and lakeside communities, each with its unique culture and a tragic history stained by brutal ethnic conflicts. Rwanda is healing the wounds of the 1994 genocide and transforming into a model of national unity and economic prosperity. From the Genocide Memorial in the pristine capital Kigali, along its impeccable roads, to the fishing villages around Lake Kivu and Nyungwe Forest National Park—home to Africa's oldest tropical forest, situated at the watershed between the Congo River basin to the west and the Nile River basin to the east.Burundi, meanwhile, is plagued by conflict, with poverty as the norm for all but a few. From Lake Tanganyika and the capital Bujumbura—surprisingly boasting refined restaurants and chic nightclubs—to Rusizi National Park and the site where journalist Henry Morton Stanley met explorer David Livingstone and uttered the iconic phrase,Dr. Livingstone, I presume?—Burundi offers a compelling mix of history and culture. Add to that the village of Gishora, where the captivating performances of the former royal drummers continue to enchant visitors.",
+      "It's amazing when the year starts with a diving vacation. This is how we collect some heat for the upcoming cold days on the ski slopes in the Alps. Thanks to Mohamed Zinah, our guide and photographer, you can also feel a small part of the Maldives magical underwater world.",
   },
 ];
 
