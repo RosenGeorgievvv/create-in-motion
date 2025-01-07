@@ -27,14 +27,15 @@ const Travels = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           />
-          <div className="space-y-12">
+          {/* Updated section for responsiveness */}
+          <div className="grid grid-cols-1 md:space-y-12 md:block gap-6">
             {data.map((item, index) => (
               <motion.div
                 key={item.id}
                 className={`flex items-center ${
                   index % 2 === 0
-                    ? "justify-start md:pl-48 lg:pl-96"
-                    : "justify-end md:pr-48 lg:pr-96"
+                    ? "md:justify-start md:pl-48 lg:pl-96"
+                    : "md:justify-end md:pr-48 lg:pr-96"
                 } md:flex-row flex-col`}
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
