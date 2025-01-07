@@ -13,7 +13,7 @@ const Travels = () => {
 
   const handleBack = () => {
     setSelectedTravel(null);
-  };   
+  };    
 
   return (
     <div className="p-6 md:p-12 relative bg-gray-100">
