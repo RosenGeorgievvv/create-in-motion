@@ -28,7 +28,6 @@ const Travels = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           />
-          {/* Updated section for responsiveness */}
           <div className="grid grid-cols-1 md:space-y-12 md:block gap-12">
             {data.map((item, index) => (
               <motion.div
@@ -47,7 +46,7 @@ const Travels = () => {
                   damping: 15,
                 }}
               >
-                <Card item={item} onClick={() => handleCardClick(item)} />
+                  <Card item={item} onClick={() => handleCardClick(item)} />
               </motion.div>
             ))}
           </div>
