@@ -22,13 +22,14 @@ const Travels = () => {
       ) : (
         <>
           <motion.div
-            className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-600"
+            style={{ height: "98%" }}
+            className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-green-600"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           />
           {/* Updated section for responsiveness */}
-          <div className="grid grid-cols-1 md:space-y-12 md:block gap-6">
+          <div className="grid grid-cols-1 md:space-y-12 md:block gap-12">
             {data.map((item, index) => (
               <motion.div
                 key={item.id}
